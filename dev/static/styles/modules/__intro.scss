@@ -87,5 +87,11 @@
 
     }
 
-
+    &__logo {
+        width: 223px;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

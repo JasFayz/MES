@@ -32,8 +32,9 @@
             table-layout   : fixed;
 
             tbody {
-                width     : 500px;
+                // width     : 500px;
                 overflow-x: auto;
+                display   : block;
             }
 
             & tr {
@@ -74,7 +75,7 @@
                     vertical-align  : middle;
                     min-width       : 100px;
                     position        : sticky;
-                    left            : 0;
+                    left            : -5px;
                 }
 
                 & td {
@@ -104,7 +105,8 @@
         }
 
         & th {
-            padding     : 22px;
+            // padding     : 22px;
+            height      : 60px;
             background  : $primary_color;
             color       : $white;
             font-size   : 20px;
@@ -139,7 +141,7 @@
             text-align   : left;
             border-right : 1px solid $primary_color;
             border-bottom: 1px solid $primary_color;
-            padding      : 20px;
+            padding      : 10px 16px;
 
             &:first-child {
                 border-left: 1px solid $primary_color;

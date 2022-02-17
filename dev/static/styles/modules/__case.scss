@@ -3,14 +3,14 @@
     padding-bottom: 120px;
 
     &__suptitle {
-        font-size    : 18px;
-        font-family  : "Poppins";
-        color        : rgb(24, 62, 93);
-        font-weight  : bold;
-        text-align   : left;
-        width        : 75px;
-        overflow     : hidden;
-        position     : relative;
+        font-size  : 18px;
+        font-family: "Poppins";
+        color      : rgb(24, 62, 93);
+        font-weight: bold;
+        text-align : left;
+        width      : 75px;
+        overflow   : hidden;
+        position   : relative;
 
     }
 
@@ -43,6 +43,13 @@
     &__body {
         display      : flex;
         margin-bottom: 30px;
+    }
+
+    &__image {
+        & img {
+            width : 100%;
+            height: auto;
+        }
     }
 
     &__text {

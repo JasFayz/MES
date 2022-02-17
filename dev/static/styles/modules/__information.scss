@@ -1,41 +1,71 @@
 .information {
-    background: $secondary_color;
-    position  : relative;
-
+    background    : $secondary_color;
+    position      : relative;
+    padding-bottom: 60px;
 
 
     &__container {
-        padding      : 80px;
-        background   : $white;
-        border-radius: 10px;
-        position     : relative;
-        top          : -217px;
+        padding                   : 80px;
+        background                : $white;
+        border-bottom-left-radius : 10px;
+        border-bottom-right-radius: 10px;
+        position                  : relative;
+        // top          : -217px;
 
-        &::before {
-            content     : '';
-            display     : block;
-            position    : absolute;
-            top         : -22px;
-            left        : 50%;
-            width       : 0;
-            height      : 0;
-            border-left : 22px solid transparent;
-            border-right: 22px solid transparent;
-            border-top  : 44px solid $primary_color;
-            transform   : translateX(-50%);
-        }
+
     }
 
     &__title {
-        font-size    : 36px;
-        font-family  : "Noto Sans CJK JP";
-        color        : $primary_color;
-        font-weight  : bold;
-        line-height  : 48px;
-        text-align   : center;
-        max-width    : 467px;
-        margin       : auto;
-        margin-bottom: 50px;
+        font-size                 : 36px;
+        font-family               : "Noto Sans CJK JP";
+        color                     : $primary_color;
+        font-weight               : bold;
+        line-height               : 48px;
+        text-align                : center;
+        padding-top               : 70px;
+        margin                    : auto;
+        border-top-right-radius   : 6px;
+        border-top-left-radius    : 6px;
+        // margin-bottom: 50px; 
+        max-width                 : 467px;
+        // background-color       : $white;
+
+        &-wrapper {
+            position: relative;
+
+            & .container {
+                background-color       : $white;
+                border-top-left-radius : 10px;
+                border-top-right-radius: 10px;
+                position               : relative;
+                z-index                : 2;
+
+                &::before {
+                    content     : '';
+                    display     : block;
+                    position    : absolute;
+                    top         : -22px;
+                    left        : 50%;
+                    width       : 0;
+                    height      : 0;
+                    border-left : 22px solid transparent;
+                    border-right: 22px solid transparent;
+                    border-top  : 44px solid $primary_color;
+                    transform   : translateX(-50%);
+                }
+            }
+
+            &::before {
+                content         : '';
+                display         : block;
+                position        : absolute;
+                top             : 0;
+                left            : 0;
+                width           : 100%;
+                height          : 100%;
+                background-color: $primary_color;
+            }
+        }
 
         & b {
             font-size  : 40px;

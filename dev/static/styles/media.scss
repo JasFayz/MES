@@ -124,19 +124,27 @@
         border-radius: 0;
     }
 
+    .problems__item:last-child {
+        justify-content: flex-start;
+    }
+
     .problems__image-title {
         max-width : 380px;
         word-break: initial;
     }
 
-    .information {
-        padding-left : 15px;
-        padding-right: 15px;
+    // .information {
+    //     padding-left : 15px;
+    //     padding-right: 15px;
+    // }
+
+    .facilities {
+        justify-content: center;
     }
 
     .facilities__item {
-        flex     : 0 0 100%;
-        max-width: 100%;
+        flex     : 0 0 50%;
+        max-width: 50%;
     }
 
     .information__image {
@@ -145,6 +153,10 @@
 
     .instructors .row>div {
         margin-bottom: 125px;
+    }
+
+    .instructors .row>div:last-child {
+        margin-bottom: 0;
     }
 
     .price .row>div {
@@ -195,7 +207,7 @@
     }
 
     .information__image img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .contact__container {
@@ -232,18 +244,27 @@
     .features__container::after {
         content: none;
     }
+
+    .information__title {
+        padding-top: 20px;
+    }
+
+    .philosophy__container::before {
+        width: 100vw;
+        top  : 104px;
+        right: calc((100vw - 991px) / -2);
+        left : 20px;
+    }
+
+    .philosophy__desc {
+        padding-left: 0;
+    }
 }
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
     .intro::before {
         left: calc(50% - 240px);
-    }
-
-
-    .header {
-        padding-left : 0;
-        padding-right: 0;
     }
 
     .header__container {
@@ -260,7 +281,144 @@
         margin-bottom: 15px;
     }
 
+    .facilities__item {
+        flex     : 0 0 100%;
+        max-width: 100%;
+    }
 
+    .intro__suptitle {
+        font-size    : 13px;
+        line-height  : 1;
+        margin-bottom: 13px;
+    }
+
+    .intro__title {
+        font-size  : 30px;
+        line-height: 1.2;
+    }
+
+    .problems {
+        padding-top   : 30px;
+        padding-bottom: 30px;
+    }
+
+    .problems__title {
+        margin-bottom: 30px;
+    }
+
+    .problems__item {
+        font-size  : 15px;
+        line-height: 21px;
+        padding    : 13px 21px;
+    }
+
+    .problems__image {
+        padding-left : 20px;
+        padding-right: 20px;
+    }
+
+    .problems__image-title {
+        font-size  : 24px;
+        line-height: 32px;
+    }
+
+    .information__container {
+        padding-top: 30px;
+    }
+
+    .information__title {
+        font-size  : 24px;
+        line-height: 32px;
+    }
+
+    .plan__title {
+        font-size  : 18px;
+        line-height: 1.6;
+    }
+
+    .plan__table th {
+        font-size  : 13px;
+        line-height: 18px;
+    }
+
+    .plan__table .alert {
+        font-size  : 13px;
+        line-height: 18px;
+    }
+
+    .plan__table td {
+        font-size  : 12px;
+        line-height: 1.5;
+    }
+
+    .information__subtitle {
+        font-size    : 20px;
+        line-height  : 32px;
+        margin-bottom: 15px;
+    }
+
+    .information__desc {
+        font-size  : 14px;
+        line-height: 23px;
+    }
+
+    .facilities {
+        margin-top   : 70px;
+        margin-bottom: 30px;
+    }
+
+    .plan {
+        margin-bottom: 45px;
+    }
+
+    .plan__table tr:first-child th {
+        min-width: 100px;
+    }
+
+    .instructors,
+    .price,
+    .case,
+    .faq,
+    .philosophy {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+    }
+
+    .philosophy__suptitle {
+        font-size  : 12px;
+        line-height: 21px;
+    }
+
+    .philosophy__title {
+        font-size  : 20px;
+        line-height: 1.5;
+    }
+
+    .philosophy__desc {
+        font-size   : 14px;
+        line-height : 22px;
+        padding-left: 0;
+    }
+
+    .philosophy__container {
+        background-color: transparent;
+    }
+
+    .philosophy__container::before {
+        width: 100vw;
+        top  : 104px;
+        right: calc((100vw - 720px) / -2);
+        left : 20px;
+    }
+
+    .contact__title {
+        margin-top   : 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro__logo {
+        width: 142px;
+    }
 }
 
 /* xs <= Small (sm) */
@@ -269,26 +427,80 @@
         left: calc(50% - 148px);
     }
 
-    .features__image,
-    .philosophy__image {
-        height: 315px;
-        width : 265px;
+    .contact__title {
+        margin-top: 0;
+    }
+
+    .contact__btn {
+        margin-left: 0;
+        max-width  : initial;
+        width      : 100%;
+        height     : 40px;
+        font-size  : 16px;
+        line-height: 1.6;
+
+    }
+
+    .contact__container {
+        padding: 20;
+    }
+
+    .contact__title {
+        font-size  : 24px;
+        line-height: 1.3;
+    }
+
+    .contact__desc {
+        font-size  : 14px;
+        line-height: 1.6;
+    }
+
+    .contact__subtitle {
+        font-size  : 12px;
+        line-height: 1.5;
+    }
+
+    .philosophy::after {
+        height: 50%;
+        right : 0;
+        left  : 0;
+        width : 100%;
+    }
+
+    .philosophy__container::before {
+        height: calc(100% - 69px);
+    }
+
+    .features__item {
+        margin-bottom: 15px;
+        font-size    : 12px;
+        line-height  : 1.2;
+        padding-left : 19px;
+    }
+
+    .features__item::before {
+        top   : 3px;
+        width : 10px;
+        height: 10px;
     }
 
     .features__suptitle {
-        font-size: 26px;
-        top      : -150px;
+        font-size  : 14px;
+        line-height: 1.3;
+        top        : -80px;
     }
 
     .features__title {
-        top      : -100px;
-        font-size: 42px;
+        top        : -55px;
+        font-size  : 30px;
+        line-height: 1.3;
     }
 
-    .features__image img,
-    .philosophy__image img {
-        width    : 100%;
-        transform: translate(25px, -25px);
+    .features__image img {
+        width     : 100%;
+        height    : auto;
+        box-shadow: -20px 20px 0 #183e5d;
+
     }
 
     .features__list-container .features {
@@ -302,7 +514,12 @@
     }
 
     .features__list-container {
-        margin-top: 30px;
+        margin-top: 50px;
+    }
+
+    .problems__title {
+        font-size  : 24px;
+        line-height: 1.2;
     }
 
     .features__list {
@@ -322,19 +539,174 @@
         padding-left: 40px;
     }
 
-    .philosophy__desc {
-        padding-left: 15px;
-    }
-
     .philosophy__container {
         background: transparent;
     }
 
-    .philosophy__container::before {
-        left: 15%;
+    .intro {
+        padding-bottom: 20px;
+
+    }
+
+    .intro__container {
+        margin-bottom: 20px;
+    }
+
+    .intro__people {
+        transform: translateX(0);
+    }
+
+    .information__image {
+        margin-bottom: 20px;
+    }
+
+    .facilities {
+        margin-top   : 30px;
+        margin-bottom: 0;
+    }
+
+    .philosophy__desc {
+        margin-bottom: 20px;
+    }
+
+    .news__suptitle,
+    .price__suptitle,
+    .instructors__suptitle,
+    .case__suptitle,
+    .faq__suptitle,
+    .price__item-header {
+        font-size  : 14px;
+        line-height: 1.5;
+    }
+
+    .news__title,
+    .price__title,
+    .instructors__title,
+    .case__title,
+    .faq__title {
+        font-size    : 24px;
+        line-height  : 1.5;
+        margin-bottom: 24px;
+    }
+
+    .case__text-title {
+        font-size    : 16px;
+        line-height  : 1.38;
+        margin-bottom: 10px;
+
+    }
+
+    .case__subtitle {
+        margin-bottom: 24px;
+        font-size    : 14px;
+        line-height: 1.66;
+    }
+
+    .case__text-subtitle {
+        font-size  : 12px;
+        line-height: 1.4;
+    }
+
+    .case__desc {
+        font-size     : 14px;
+        line-height   : 1.6;
+        padding-bottom: 0;
+    }
+
+    .faq__item {
+        padding: 15px;
+    }
+
+    .faq__item .question::before,
+    .faq__item .answer::before {
+        font-size  : 16px;
+        line-height: 20px;
+        text-align : center;
+
+    }
+
+    .faq__item .question {
+        font-size    : 15px;
+        line-height  : 1.5;
+        margin-bottom: 10px;
+    }
+
+    .faq__item .answer {
+        font-size  : 13px;
+        line-height: 1.675;
+
+    }
+
+    .header__login-btn {
+        font-size  : 14px;
+        line-height: 1;
+    }
+
+    .price__item-body .list__item .value {
+        font-size: 12px;
+    }
+
+    .price__item-body .list__item:nth-child(2) {
+        flex: auto;
+    }
+
+    .price__item-body .list__item:nth-child(3) {
+        flex: auto;
+    }
+
+    .news__item {
+        flex-direction: column;
+    }
+
+    .news__item .date {
+        font-size    : 12px;
+        line-height  : 1;
+        margin-bottom: 10px;
+    }
+
+    .news__item .title {
+        font-size   : 13px;
+        line-height : 1.5;
+        padding-left: 0;
     }
 
 
+    .footer__suptitle {
+        font-size  : 14px;
+        line-height: 1.75;
+    }
+
+    .footer__title {
+        font-size    : 20px;
+        line-height  : 1.75;
+        margin-bottom: 20px;
+    }
+
+    .footer__contact {
+        font-size  : 12px;
+        line-height: 1.5;
+    }
+
+    .footer__bottom {
+        padding-top   : 5px;
+        padding-bottom: 5px;
+        font-size     : 14px;
+        line-height   : 1.75;
+    }
+
+    .features__image {
+        width : initial;
+        height: auto;
+    }
+
+    .features {
+        padding-left : 20px;
+        padding-right: 10px;
+    }
+
+    .information__title-wrapper {
+        padding: 0 12px;
+    }
 }
 
 
@@ -355,6 +727,10 @@
     .intro__container {
         margin-bottom: -60px;
     }
+
+    .intro__logo {
+        width: 180px;
+    }
 }
 
 /* Large (lg) */
@@ -366,12 +742,21 @@
     .features__image img {
         box-shadow: -50px 50px 0 #183e5d
     }
+
+    .intro__logo {
+        width: 200px;
+    }
 }
 
 /* Extra large (xl) */
 @media (min-width : 1200px) {
     .container {
         max-width: $content-size;
+    }
+
+
+    .intro__logo {
+        width: 223px;
     }
 
     .intro__container {
