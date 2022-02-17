@@ -1,0 +1,26 @@
+header.header
+
+    .header__container
+        a(href="").header__logo 
+            img(src="static/images/general/logo.jpg" alt="")
+        ul.header__navigation.nav 
+            li.nav-item 
+                a(href="").nav-link サービス概要
+            li.nav-item 
+                a(href="").nav-link ご利用方法
+            li.nav-item 
+                a(href="").nav-link 料金・コース
+            li.nav-item 
+                a(href="").nav-link 導入事例
+            li.nav-item 
+                a(href="").nav-link よくあるご質問
+        button.btn.header__login-btn 受講生ログイン
+
+        ul.header__apply.nav.nav-pills.nav-fill
+            li.nav-item
+                a(href="").nav-link.nav-link--secondary 資料請求 
+            li.nav-item
+                a(href="").nav-link.nav-link--primary お問い合わせ
+            li.nav-item 
+                button.nav-link.menu-btn 
+                    include ../../../ui-kit/ui-sandwich/ui-sandwich

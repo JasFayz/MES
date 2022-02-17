@@ -1,0 +1,132 @@
+header {
+    flex: 0 0 auto;
+
+}
+
+.header {
+    padding   : 20px;
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    z-index   : 2;
+    background: white;
+    transition: all 0.3s linear;
+
+    &.fixed {
+        padding      : 8px;
+        border-bottom: 2px solid #eee;
+
+        & .header__logo img {
+            width: 100px;
+        }
+    }
+
+    &__logo {
+        & img {
+            width     : 144px;
+            transition: all 0.3s linear;
+        }
+    }
+
+    &__container {
+        display        : flex;
+        padding-left   : 18px;
+        padding-right  : 18px;
+        flex-wrap      : wrap;
+        align-items    : center;
+        justify-content: center;
+        align-content  : space-between;
+    }
+
+    &__navigation {
+
+        margin-left: auto;
+
+        & .nav-link {
+            font-size    : 16px;
+            font-family  : "Noto Sans CJK JP";
+            color        : rgb(24, 62, 93);
+            font-weight  : bold;
+            line-height  : 1.61;
+            text-align   : center;
+            transition   : all 0.3s linear;
+            padding      : 6px 10px;
+            border       : 2px solid transparent;
+            border-radius: 25rem;
+
+
+            &:hover {
+                border-color: $primary_color;
+            }
+        }
+    }
+
+    &__login {
+        &-btn {
+            font-size    : 18px;
+            font-family  : "Noto Sans CJK JP";
+            color        : rgb(24, 62, 93);
+            font-weight  : bold;
+            line-height  : 1.61;
+            text-align   : center;
+            transition   : all 0.3s linear;
+            padding      : 6px 10px;
+            padding-left : 30px;
+            border-radius: 25rem;
+            border       : 2px solid $primary_color;
+            margin-left  : 15px;
+            margin-right : 15px;
+            background   : url('../images/general/user.png')no-repeat 10px 50%;
+
+            &:hover {
+                border-color: $secondary_color;
+            }
+        }
+    }
+
+    &__apply {
+        max-width: 312px;
+        width    : 100%;
+
+        & .nav-item {
+            flex: 1 0 50%;
+        }
+
+        & .nav-link {
+            font-size    : 18px;
+            font-family  : "Noto Sans CJK JP";
+            color        : rgb(24, 62, 93);
+            font-weight  : bold;
+            line-height  : 1.61;
+            text-align   : center;
+            padding      : 8px 20px;
+            border-radius: 0;
+            transition   : all 0.25s linear;
+
+            &.menu-btn {
+                display: none;
+            }
+
+            &--secondary {
+                background: $secondary_color;
+
+
+                &:hover {
+                    box-shadow: inset 0 0 15px rgba($color: $primary_color, $alpha: 0.7);
+                }
+            }
+
+            &--primary {
+                background: $primary_color;
+
+                color: $secondary_color;
+
+                &:hover {
+                    box-shadow: inset 0 0 15px rgba($color: $secondary_color, $alpha: 0.7);
+                }
+            }
+        }
+    }
+
+}

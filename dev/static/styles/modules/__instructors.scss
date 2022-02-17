@@ -1,0 +1,117 @@
+.instructors {
+    padding-top   : 89px;
+    padding-bottom: 85px;
+
+    &__suptitle {
+        font-size   : 18px;
+        font-family : "Poppins";
+        color       : $primary_color;
+        font-weight : bold;
+        line-height : 2.667;
+        text-align  : center;
+        overflow    : hidden;
+        position    : relative;
+        width       : 150px;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        font-size    : 36px;
+        font-family  : "Noto Sans CJK JP";
+        color        : $primary_color;
+        font-weight  : bold;
+        line-height  : 1.333;
+        text-align   : center;
+        margin-bottom: 46px;
+        overflow     : hidden;
+        position     : relative;
+        width        : 200px;
+        margin-left  : auto;
+        margin-right : auto;
+
+    }
+
+    &__desc {
+        font-size    : 18px;
+        font-family  : "Noto Sans CJK JP";
+        color        : $primary_color;
+        font-weight  : 500;
+        line-height  : 1.667;
+        text-align   : center;
+        max-width    : 507px;
+        margin       : auto;
+        margin-bottom: 165px;
+    }
+
+    &__item {
+        background   : #eeeeee;
+        padding      : 30px;
+        padding-top  : 224px;
+        position     : relative;
+        height       : 100%;
+        border-radius: 10px;
+    }
+
+    &__image {
+        width           : 300px;
+        height          : 300px;
+        border-radius   : 50%;
+        background-color: $white;
+        position        : absolute;
+        top             : -100px;
+        left            : 50%;
+        transform       : translate(-50%);
+    }
+
+    &__name {
+        font-size      : 22px;
+        font-family    : "Poppins";
+        color          : rgb(18, 47, 70);
+        font-weight    : bold;
+        line-height    : 1.182;
+        text-align     : center;
+        margin-bottom  : 22px;
+        height         : 52px;
+        overflow       : hidden;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+    }
+
+    & .experience {
+        list-style         : none;
+        list-style-position: inside;
+        padding-left       : 0;
+
+        &__item {
+            font-size   : 14px;
+            font-family : "Noto Sans CJK JP";
+            color       : rgb(24, 62, 93);
+            line-height : 24px;
+            text-align  : left;
+            font-weight : 500;
+            padding     : 10px 0;
+            border-top  : 1px dashed rgba($color: $primary_color, $alpha: 0.3);
+            padding-left: 25px;
+            position    : relative;
+
+            &:last-child {
+                border-bottom: 1px dashed rgba($color: $primary_color, $alpha: 0.3);
+
+            }
+
+            &::before {
+                content   : '';
+                display   : block;
+                width     : 13px;
+                height    : 13px;
+                background: $primary_color;
+                transform : rotate(45deg);
+                position  : absolute;
+                left      : 2px;
+                top       : 15px;
+            }
+        }
+    }
+}

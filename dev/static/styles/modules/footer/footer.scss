@@ -1,0 +1,57 @@
+footer {
+    flex: 0 0 auto;
+}
+
+.footer {
+    &__text {
+        display        : flex;
+        justify-content: center;
+        align-items    : flex-start;
+        height         : 100%;
+        flex-direction : column;
+        background     : $primary_color;
+        padding-left   : 85px;
+    }
+
+    &__title {
+        font-size    : 36px;
+        font-family  : "Noto Sans CJK JP";
+        color        : $white;
+        font-weight  : bold;
+        line-height  : 48px;
+        text-align   : left;
+        margin-bottom: 54px;
+    }
+
+    &__suptitle {
+        font-size  : 24px;
+        font-family: "Noto Sans CJK JP";
+        color      : $white;
+        line-height: 2;
+        text-align : left;
+        font-weight: 500;
+    }
+
+    &__contact {
+        font-size  : 14px;
+        font-family: "Noto Sans CJK JP";
+        color      : $white;
+        line-height: 24px;
+        text-align : left;
+        font-weight: 500;
+
+        & a {
+            color: $secondary_color;
+        }
+    }
+
+    &__bottom {
+        padding    : 25px;
+        text-align : center;
+        background : $secondary_color;
+        font-size  : 18px;
+        font-family: "Poppins";
+        color      : $primary_color;
+        font-weight: 600;
+    }
+}

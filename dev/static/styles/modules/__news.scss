@@ -1,0 +1,76 @@
+.news {
+    padding-bottom: 110px;
+
+    &::after {
+        content: '';
+        display: block;
+        clear  : both;
+    }
+
+    &__title {
+        font-size  : 36px;
+        font-family: "Noto Sans CJK JP";
+        color      : $primary_color;
+        font-weight: bold;
+        line-height: 48px;
+        text-align : left;
+        overflow   : hidden;
+        position   : relative;
+        width      : 180px;
+    }
+
+    &__suptitle {
+        font-size  : 18px;
+        font-family: "Poppins";
+        color      : $primary_color;
+        font-weight: bold;
+        line-height: 48px;
+        text-align : left;
+        overflow   : hidden;
+        position   : relative;
+        width      : 180px;
+    }
+
+    &__list {
+        max-width: 756px;
+        width    : 100%;
+        float    : right;
+        position : relative;
+        top      : -36px;
+
+
+    }
+
+    &__item {
+        display        : flex;
+        padding-top    : 24px;
+        padding-bottom : 24px;
+        font-size      : 14px;
+        font-family    : "Noto Sans CJK JP";
+        color          : rgb(24, 62, 93);
+        line-height    : 24px;
+        text-align     : justify;
+        font-weight    : 500;
+        border-top     : 1px dashed #eee;
+        border-bottom  : 1px dashed #eee;
+        text-decoration: none;
+        transition     : all 0.3s linear;
+
+        &:hover {
+            color: inherit;
+
+            & .title {
+                text-decoration: underline;
+            }
+        }
+
+        & .date {
+            padding-right: 31px;
+        }
+
+        & .title {
+            padding-left: 31px;
+            transition  : all 0.3s linear;
+        }
+    }
+}

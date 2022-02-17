@@ -1,0 +1,85 @@
+.case {
+    padding-top   : 121px;
+    padding-bottom: 120px;
+
+    &__suptitle {
+        font-size    : 18px;
+        font-family  : "Poppins";
+        color        : rgb(24, 62, 93);
+        font-weight  : bold;
+        text-align   : left;
+        width        : 75px;
+        overflow     : hidden;
+        position     : relative;
+
+    }
+
+    &__title {
+        font-size    : 36px;
+        font-family  : "Noto Sans CJK JP";
+        color        : rgb(24, 62, 93);
+        font-weight  : bold;
+        text-align   : left;
+        margin-bottom: 44px;
+        overflow     : hidden;
+        width        : 155px;
+        position     : relative;
+    }
+
+    &__subtitle {
+        font-size    : 18px;
+        font-family  : "Noto Sans CJK JP";
+        color        : rgb(24, 62, 93);
+        line-height  : 1.667;
+        margin-bottom: 53px;
+    }
+
+    &__item {
+        border-radius: 10px;
+        background   : #eee;
+        padding      : 30px 25px;
+    }
+
+    &__body {
+        display      : flex;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        padding-left   : 24px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+
+
+        &-title {
+            font-size    : 20px;
+            font-family  : "Noto Sans CJK JP";
+            color        : $primary_color;
+            font-weight  : bold;
+            line-height  : 1.385;
+            text-align   : left;
+            margin-bottom: 23px;
+
+        }
+
+        &-subtitle {
+            font-size  : 14px;
+            font-family: "Noto Sans CJK JP";
+            color      : $primary_color;
+            line-height: 1.4;
+
+
+        }
+    }
+
+    &__desc {
+        font-size     : 16px;
+        font-family   : "Noto Sans CJK JP";
+        color         : $primary_color;
+        line-height   : 1.667;
+        text-align    : justify;
+        font-weight   : 700;
+        padding-bottom: 70px;
+    }
+}

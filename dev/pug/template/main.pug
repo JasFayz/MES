@@ -1,0 +1,55 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="jp")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible' content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		<script>
+			| (function(d) {
+			| 	var config = {
+			| 	kitId: 'qme0upm',
+			| 	scriptTimeout: 3000,
+			| 	async: true
+			| 	},
+			| 	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			| })(document);
+		</script>
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+
+		<!--[if lt IE 9]>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+		<![endif]-->
+	body
+		.wrapper
+			include ../modules/header/header
+			.content
+				block content
+			include ../modules/footer/footer
+		script(src="static/js/jquery-3.3.1.min.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		script(src="https://api-maps.yandex.ru/2.1/?apikey=cef8493d-ca5a-4a2c-8704-2c26f7d1e9ef&lang=en_US" type="text/javascript")
+		script
+			| ymaps.ready(init);
+			| function init(){ 
+			| 	// Creating the map.    
+			| 	var myMap = new ymaps.Map("map", {
+			| 		// The map center coordinates.
+			| 		// Default order: “latitude, longitude”.
+			| 		// To not manually determine the map center coordinates,
+			| 		// use the Coordinate detection tool.
+			| 		center: [41.311158, 69.279737],
+			| 		// Zoom level. Acceptable values:
+			| 		// from 0 (the entire world) to 19.
+			| 		zoom: 7
+			| 	});
+			| }
+		block script
+
