@@ -55,6 +55,16 @@
                     }
                 }
 
+                &:nth-child(2) {
+                    th {
+                        color: $secondary_color;
+                    }
+
+                    td {
+                        background-color: #fff1bd;
+                    }
+                }
+
                 &:last-child {
                     & th {
                         border-bottom-left-radius: 10px;
@@ -71,7 +81,7 @@
                 & th {
                     background-color: $primary_color;
                     border-bottom   : 1px solid $white;
-                    color           : $secondary_color;
+                    color           : $white;
                     vertical-align  : middle;
                     min-width       : 100px;
                     position        : sticky;
@@ -128,7 +138,8 @@
             }
 
             &:nth-child(2) {
-                color: #ffdd5a;
+                color      : #ffdd5a;
+                font-family: "Poppins";
             }
         }
 

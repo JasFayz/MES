@@ -13,7 +13,7 @@
         // top       : 235px;
         left         : -125px;
         z-index      : -1;
-        bottom       : 0;
+        bottom       : 100px;
 
     }
 
@@ -77,6 +77,7 @@
         text-align       : justify;
         font-weight      : 500;
         padding-left     : 80px;
+        padding-right    : 40px;
         // padding-bottom: 80px;
     }
 
@@ -90,7 +91,7 @@
         & img {
             position    : relative;
             z-index     : 1;
-            box-shadow  : -35px 35px 0 #183e5d;
+            box-shadow  : -50px 50px 0 #183e5d;
             width       : 100%;
             height      : auto;
             // transform: translate(53px, -51px);

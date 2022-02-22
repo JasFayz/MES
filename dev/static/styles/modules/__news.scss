@@ -16,7 +16,7 @@
         text-align : left;
         overflow   : hidden;
         position   : relative;
-        width      : 180px;
+        width      : fit-content;
     }
 
     &__suptitle {
@@ -28,7 +28,7 @@
         text-align : left;
         overflow   : hidden;
         position   : relative;
-        width      : 180px;
+        width      : fit-content;
     }
 
     &__list {

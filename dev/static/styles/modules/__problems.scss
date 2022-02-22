@@ -1,6 +1,6 @@
 .problems {
     padding-top   : 136px;
-    padding-bottom: 270px;
+    padding-bottom: 70px;
     background    : $primary_color;
 
     &__title {
@@ -83,9 +83,10 @@
 
     &__image {
         text-align: center;
+
         & img {
             max-width: 100%;
-            height: auto;
+            height   : auto;
         }
 
         &-title {

@@ -390,8 +390,9 @@
     }
 
     .philosophy__title {
-        font-size  : 20px;
-        line-height: 1.5;
+        font-size    : 20px;
+        line-height  : 1.5;
+        margin-bottom: 25px;
     }
 
     .philosophy__desc {
@@ -418,6 +419,10 @@
 
     .intro__logo {
         width: 142px;
+    }
+
+    .news__title {
+        margin-bottom: 20px;
     }
 }
 
@@ -468,7 +473,7 @@
     }
 
     .philosophy__container::before {
-        height: calc(100% - 69px);
+        height: calc(100% - 74px);
     }
 
     .features__item {
@@ -599,7 +604,7 @@
     .case__subtitle {
         margin-bottom: 24px;
         font-size    : 14px;
-        line-height: 1.66;
+        line-height  : 1.66;
     }
 
     .case__text-subtitle {
@@ -706,6 +711,20 @@
 
     .information__title-wrapper {
         padding: 0 12px;
+    }
+
+    .philosophy__image img {
+        box-shadow: -35px 30px 0 #183e5d;
+    }
+
+    .contact {
+        padding-top   : 20px;
+        padding-bottom: 20px;
+    }
+
+    .plan__table td {
+        font-size  : 14px;
+        line-height: 1.2;
     }
 }
 

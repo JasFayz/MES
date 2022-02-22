@@ -41,10 +41,11 @@
     }
 
     &__image {
-        position: relative;
-        height  : 542px;
-        width   : 446px;
-        z-index : 1;
+        position   : relative;
+        // height  : 542px;
+        // width   : 446px;
+        z-index    : 1;
+        text-align : center;
 
         & img {
             position    : relative;
@@ -112,6 +113,7 @@
         line-height  : 36px;
         text-align   : left;
         position     : relative;
+        font-weight  : 700;
 
         &::before {
             content   : '';

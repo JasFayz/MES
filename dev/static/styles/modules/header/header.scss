@@ -4,7 +4,7 @@ header {
 }
 
 .header {
-    padding   : 20px;
+    padding   : 20px 30px;
     position  : fixed;
     top       : 0;
     left      : 0;
@@ -25,15 +25,13 @@ header {
     &__logo {
         & img {
             width     : 144px;
-            height: auto;
+            height    : auto;
             transition: all 0.3s linear;
         }
     }
 
     &__container {
         display        : flex;
-        padding-left   : 18px;
-        padding-right  : 18px;
         flex-wrap      : wrap;
         align-items    : center;
         justify-content: center;
@@ -44,31 +42,73 @@ header {
 
         margin-left: auto;
 
-        & .nav-link {
-            font-size    : 16px;
-            font-family  : "Noto Sans CJK JP";
-            color        : rgb(24, 62, 93);
-            font-weight  : bold;
-            line-height  : 1.61;
-            text-align   : center;
-            transition   : all 0.3s linear;
-            padding      : 6px 10px;
-            border       : 2px solid transparent;
-            border-radius: 25rem;
+        & .nav-item {
+            margin-right: 24px;
 
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        & .nav-link {
+            font-size       : 16px;
+            font-family     : "Noto Sans CJK JP";
+            color           : rgb(24, 62, 93);
+            font-weight     : bold;
+            line-height     : 1.61;
+            text-align      : center;
+            transition      : all 0.3s linear;
+            // padding      : 6px 10px;
+            border-radius   : 0;
+            position        : relative;
+            padding         : 0;
+
+            &::before {
+                content : '';
+                display : block;
+                position: absolute;
+                bottom  : -8px;
+
+                left            : 50%;
+                width           : 0%;
+                height          : 3px;
+                background-color: $primary_color;
+                transition      : all 0.3s linear;
+
+            }
+
+            &::after {
+                content         : '';
+                display         : block;
+                position        : absolute;
+                bottom          : -8px;
+                right           : 50%;
+                width           : 0%;
+                height          : 3px;
+                background-color: $primary_color;
+                transition      : all 0.3s linear;
+            }
 
             &:hover {
                 border-color: $primary_color;
+
+                &::before {
+                    width: 50%;
+                }
+
+                &::after {
+                    width: 50%;
+                }
             }
         }
     }
 
     &__login {
         &-btn {
-            font-size    : 18px;
+            font-size    : 16px;
             font-family  : "Noto Sans CJK JP";
             color        : rgb(24, 62, 93);
-            font-weight  : bold;
+            font-weight  : 600;
             line-height  : 1.61;
             text-align   : center;
             transition   : all 0.3s linear;
